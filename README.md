@@ -1,8 +1,4 @@
-<div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:1E88E5,50:43A047,100:FB8C00&height=200&section=header&text=OPTIVER%20TRADING%20SYSTEM&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Advanced%20Financial%20ML%20%26%20Algorithmic%20Trading&descAlignY=51&descSize=18&descColor=ffffff)
-
-</div>
 
 <div align="center">
 
