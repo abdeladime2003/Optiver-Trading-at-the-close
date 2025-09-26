@@ -1,37 +1,41 @@
+<div align="center">
 
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:1E88E5,50:43A047,100:FB8C00&height=200&section=header&text=OPTIVER%20TRADING%20SYSTEM&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=LightGBM%20Stock%20Price%20Prediction&descAlignY=51&descSize=18&descColor=ffffff)
+
+</div>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Status-Production_Ready-00B894?style=for-the-badge&logo=code&logoColor=white)](https://github.com/abdeladime2003/Optiver-Trading-at-the-close)
+[![Status](https://img.shields.io/badge/Status-Research_Project-00B894?style=for-the-badge&logo=code&logoColor=white)](https://github.com/abdeladime2003/Optiver-Trading-at-the-close)
 ![Machine Learning](https://img.shields.io/badge/ML-LightGBM-FF6B35?style=for-the-badge&logo=python&logoColor=white)
-![Finance](https://img.shields.io/badge/Finance-Quantitative-1E88E5?style=for-the-badge&logo=chart.js&logoColor=white)
-![Trading](https://img.shields.io/badge/Trading-Algorithmic-43A047?style=for-the-badge&logo=tradingview&logoColor=white)
+![Finance](https://img.shields.io/badge/Finance-Stock_Prediction-1E88E5?style=for-the-badge&logo=chart.js&logoColor=white)
+![Competition](https://img.shields.io/badge/Competition-Optiver-43A047?style=for-the-badge&logo=tradingview&logoColor=white)
 
 </div>
 
 ## PROJECT OVERVIEW
 
-**Optiver Trading at the Close** is a sophisticated **financial machine learning system** designed for high-frequency trading and stock market prediction. This project implements advanced quantitative strategies using **LightGBM** regression models to predict closing auction prices in financial markets, specifically targeting the **Optiver Trading Competition** methodology.
+**Optiver Trading at the Close** is a **machine learning project** focused on predicting stock closing auction prices using **LightGBM regression**. This project implements systematic feature engineering and hyperparameter optimization to forecast target values based on historical market microstructure data from the **Optiver Trading Competition**.
 
 ### Core Objectives
 
-- **Price Prediction**: Accurate forecasting of stock closing prices using historical market data
-- **Algorithmic Trading**: Implementation of systematic trading strategies based on ML predictions  
-- **Risk Management**: Advanced statistical modeling for portfolio optimization
-- **Market Microstructure**: Analysis of bid-ask spreads, order book dynamics, and market efficiency
+- **Price Prediction**: Forecast closing auction price movements using market data
+- **Feature Engineering**: Create meaningful financial indicators from raw market data  
+- **Model Optimization**: Systematic hyperparameter tuning for optimal performance
+- **Market Analysis**: Understanding bid-ask spreads, volume patterns, and price dynamics
 
-### Business Value
+### Technical Approach
 
-- **Trading Alpha Generation**: Systematic identification of profitable trading opportunities
-- **Market Making**: Optimized bid-ask spread strategies for liquidity provision
-- **Risk-Adjusted Returns**: Statistical models ensuring consistent profitability
-- **Real-Time Execution**: Low-latency prediction and order execution capabilities
+- **Data Processing**: Handle missing values, outlier detection, and feature interpolation
+- **Feature Creation**: Generate 20+ engineered features from market microstructure data
+- **Model Training**: LightGBM with RandomizedSearchCV for hyperparameter optimization
+- **Performance Evaluation**: Cross-validation with MAE and RMSE metrics
 
 ---
 
 <div align="center">
 
-![Tech Stack](https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,2,28,0&height=60&section=header&text=TECHNICAL%20ARCHITECTURE&fontSize=20&fontColor=ffffff)
+![Tech Stack](https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,2,28,0&height=60&section=header&text=TECHNICAL%20STACK&fontSize=20&fontColor=ffffff)
 
 </div>
 
@@ -41,147 +45,172 @@
 
 ### Machine Learning & Analytics
 
-![LightGBM](https://img.shields.io/badge/LightGBM-Advanced_Boosting-FF6B35?style=flat-square&logo=python&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-Gradient_Boosting-FF6B35?style=flat-square&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-Numerical_Computing-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit_Learn-ML_Pipeline-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 
-### Financial Analysis & Visualization
+### Data Visualization & Analysis
 
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Plotting-11557C?style=flat-square&logo=matplotlib&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical_Viz-8A2BE2?style=flat-square&logo=python&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-Interactive_Charts-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-![TA-Lib](https://img.shields.io/badge/TA_Lib-Technical_Analysis-FF9500?style=flat-square&logo=tradingview&logoColor=white)
 
 ### Development Environment
 
 ![Jupyter](https://img.shields.io/badge/Jupyter_Notebook-Interactive_Development-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat-square&logo=git&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)
 
 </div>
 
 ---
 
-## FINANCIAL METHODOLOGY
+## FEATURE ENGINEERING
 
-### 📈 **Quantitative Features**
+### **Raw Data Features**
 
 <div align="center">
 
-| **Feature Category** | **Indicators** | **Purpose** | **Implementation** |
-|:-------------------|:---------------|:------------|:------------------|
-| **Price Action** | OHLCV, WAP, VWAP | Core price dynamics | Real-time calculation |
-| **Spread Analysis** | Bid-Ask Spread, Mid-Price | Market microstructure | Statistical modeling |
-| **Momentum** | RSI, MACD, Bollinger Bands | Trend identification | Technical analysis |
-| **Volume** | Volume Profile, OBV | Liquidity analysis | Order flow tracking |
-| **Volatility** | ATR, Realized Vol | Risk measurement | Statistical volatility |
+| **Feature** | **Description** | **Type** | **Usage** |
+|:------------|:----------------|:---------|:----------|
+| **stock_id** | Stock identifier | Categorical | Model training |
+| **seconds_in_bucket** | Time within auction | Numerical | Temporal feature |
+| **imbalance_size** | Order imbalance quantity | Numerical | Volume analysis |
+| **reference_price** | Benchmark price | Numerical | Price normalization |
+| **bid_price** | Best bid price | Numerical | Spread calculation |
+| **ask_price** | Best ask price | Numerical | Spread calculation |
+| **wap** | Weighted average price | Numerical | Price impact |
+| **matched_size** | Matched volume | Numerical | Liquidity measure |
 
 </div>
 
-### 🎯 **Model Architecture**
+### **Engineered Features**
 
-**LightGBM Configuration:**
+**Price-Based Features:**
 ```python
-# Optimized hyperparameters for financial data
-lgb_params = {
-    'objective': 'regression',
-    'metric': 'rmse',
-    'boosting_type': 'gbdt',
+# Spread and mid-price calculations
+df['spread'] = df['ask_price'] - df['bid_price'] 
+df['mid_price'] = (df['ask_price'] + df['bid_price']) / 2
+df['price_impact'] = df['reference_price'] - df['wap']
+```
+
+**Volume-Based Features:**
+```python
+# Volume analysis
+df['total_volume'] = df['bid_size'] + df['ask_size']
+df['volume_imbalance'] = df['bid_size'] - df['ask_size']
+df['imbalance_buy_sell_ratio'] = df['imbalance_size'] / df['matched_size']
+```
+
+**Technical Indicators:**
+```python
+# RSI calculation (14-period)
+def compute_rsi(series, period=14):
+    delta = series.diff()
+    gain = delta.where(delta > 0, 0)
+    loss = -delta.where(delta < 0, 0)
+    avg_gain = gain.rolling(window=period).mean()
+    avg_loss = loss.rolling(window=period).mean()
+    rs = avg_gain / avg_loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi
+
+# Moving averages and volatility
+df['rsi'] = compute_rsi(df['mid_price'])
+df['sma_10'] = df['mid_price'].rolling(window=10).mean()
+df['ema_10'] = df['mid_price'].ewm(span=10, adjust=False).mean()
+df['price_volatility'] = df['mid_price'].rolling(window=10).std()
+```
+
+---
+
+<div align="center">
+
+![Performance](https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,5,30,28&height=60&section=header&text=MODEL%20PERFORMANCE&fontSize=20&fontColor=ffffff)
+
+</div>
+
+## ACTUAL MODEL RESULTS
+
+### **Model Configuration**
+
+**Optimized LightGBM Parameters:**
+```python
+# Best parameters found through RandomizedSearchCV
+best_params = {
     'num_leaves': 100,
-    'learning_rate': 0.05,
-    'feature_fraction': 0.8,
-    'bagging_fraction': 0.8,
-    'bagging_freq': 5,
-    'verbosity': -1,
-    'random_state': 42
+    'n_estimators': 200, 
+    'min_child_samples': 50,
+    'learning_rate': 0.01
 }
 ```
 
-**Feature Engineering Pipeline:**
-- **Lag Features**: Historical price movements (1-20 periods)
-- **Rolling Statistics**: Moving averages, standard deviations
-- **Technical Indicators**: RSI, MACD, Stochastic oscillators
-- **Market Regime**: Volatility clustering, trend classification
-
----
+### **Performance Metrics**
 
 <div align="center">
 
-![Performance](https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,5,30,28&height=60&section=header&text=TRADING%20PERFORMANCE&fontSize=20&fontColor=ffffff)
+| **Metric** | **Value** | **Interpretation** |
+|:-----------|:----------|:-------------------|
+| **Mean Absolute Error (MAE)** | 6.30 | Average prediction error |
+| **Root Mean Squared Error (RMSE)** | 9.29 | Penalizes larger errors |
+| **Cross-Validation Score** | -86.89 | Negative MSE (lower is better) |
 
 </div>
 
-## MODEL PERFORMANCE
+### **Feature Importance Analysis**
 
-### 📊 **Backtesting Results**
+**Top Contributing Features:**
+```python
+# Feature importance from trained model
+feature_importance = [
+    ('spread', 336),                    # Highest importance
+    ('seconds_in_bucket', 274),         # Temporal component  
+    ('matched_size', 204),              # Volume measure
+    ('imbalance_buy_sell_ratio', 190),  # Order flow imbalance
+    ('imbalance_size', 179),            # Raw imbalance
+]
+```
 
-<div align="center">
-
-| **Metric** | **Value** | **Benchmark** | **Status** |
-|:-----------|:----------|:--------------|:-----------|
-| **RMSE** | 0.0034 | 0.0045 | ![Outperform](https://img.shields.io/badge/+24%25-Outperform-00B894?style=flat-square) |
-| **MAE** | 0.0028 | 0.0038 | ![Outperform](https://img.shields.io/badge/+26%25-Outperform-00B894?style=flat-square) |
-| **R² Score** | 0.847 | 0.756 | ![Superior](https://img.shields.io/badge/+12%25-Superior-00B894?style=flat-square) |
-| **Sharpe Ratio** | 2.34 | 1.68 | ![Excellent](https://img.shields.io/badge/+39%25-Excellent-00B894?style=flat-square) |
-| **Max Drawdown** | -3.2% | -5.8% | ![Controlled](https://img.shields.io/badge/45%25_Better-Controlled-00B894?style=flat-square) |
-
-</div>
-
-### 🎯 **Trading Metrics**
-
-**Risk-Adjusted Performance:**
-- **Annual Return**: 23.7% (vs 14.2% benchmark)
-- **Volatility**: 12.4% (well-controlled risk profile)
-- **Win Rate**: 67.3% (strong prediction accuracy)
-- **Profit Factor**: 1.89 (consistent profitability)
-
-**Execution Efficiency:**
-- **Prediction Latency**: <2ms (real-time capable)
-- **Model Update Frequency**: Every 15 minutes
-- **Feature Importance Stability**: 94.6% correlation
-- **Out-of-Sample Performance**: 91.2% of in-sample metrics
+**Model Selection Process:**
+- Initially trained on all 26 features
+- Selected features with importance > 100 for final model (12 features)
+- Used 3-fold cross-validation for hyperparameter optimization
+- 50 iterations of RandomizedSearchCV for parameter tuning
 
 ---
 
-## GETTING STARTED
+## DATA PREPROCESSING
 
-### Prerequisites
+### **Missing Value Treatment**
 
-```bash
-# System Requirements
-Python 3.9+
-RAM: 8GB+ (16GB recommended for large datasets)
-Storage: 2GB+ free space
-Internet: Required for data downloads
+```python
+# Handle missing values systematically
+df = df.dropna(subset=["ask_price"], axis=0)
+
+# Set near/far prices to 0 when seconds_in_bucket <= 300
+df.loc[df['seconds_in_bucket'] <= 300, "near_price"] = 0
+df.loc[df['seconds_in_bucket'] <= 300, "far_price"] = 0
+
+# Interpolate remaining missing values
+df['far_price'] = df['far_price'].interpolate()
+df['near_price'] = df['near_price'].interpolate()
 ```
 
-### Installation
+### **Outlier Detection and Treatment**
 
-```bash
-# Clone the repository
-git clone https://github.com/abdeladime2003/Optiver-Trading-at-the-close.git
-cd Optiver-Trading-at-the-close
+```python
+def outlier_threshold(dataframe, variable):
+    Q1 = dataframe[variable].quantile(0.01)
+    Q3 = dataframe[variable].quantile(0.99)
+    IQR = Q3 - Q1
+    up_limit = Q3 + 1.5 * IQR
+    low_limit = Q1 - 1.5 * IQR
+    return low_limit, up_limit
 
-# Create virtual environment
-python -m venv trading_env
-source trading_env/bin/activate  # On Windows: trading_env\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Additional financial packages
-pip install yfinance ta-lib plotly
-```
-
-### Quick Start
-
-```bash
-# Launch Jupyter Notebook
-jupyter notebook
-
-# Open the main analysis notebook
-# Model.ipynb contains the complete trading pipeline
+def replace_with_threshold(dataframe, variable):
+    low_limit, up_limit = outlier_threshold(dataframe, variable)
+    dataframe.loc[(dataframe[variable] < low_limit), variable] = low_limit
+    dataframe.loc[(dataframe[variable] > up_limit), variable] = up_limit
+    return dataframe
 ```
 
 ---
@@ -190,286 +219,163 @@ jupyter notebook
 
 ```
 Optiver-Trading-at-the-close/
-├── Model.ipynb                    # Main trading model implementation
-├── data/                          # Market data directory
-│   ├── raw/                      # Original dataset files
-│   ├── processed/                # Cleaned and engineered features
-│   └── external/                 # Additional market data sources
+├── Model.ipynb                    # Main analysis and model training
+├── data/                          # Dataset directory
+│   └── train.csv                 # Training dataset (5.2M+ rows)
 ├── requirements.txt               # Python dependencies
-├── README.md                     # Project documentation
-├── notebooks/                    # Additional analysis notebooks
-│   ├── data_exploration.ipynb    # Exploratory data analysis
-│   ├── feature_engineering.ipynb # Feature creation pipeline
-│   └── backtesting.ipynb        # Trading strategy validation
-├── src/                          # Source code modules
-│   ├── data_preprocessing.py     # Data cleaning utilities
-│   ├── feature_engineering.py    # Technical indicator calculations
-│   ├── model_training.py         # LightGBM training pipeline
-│   ├── backtesting.py           # Trading strategy evaluation
-│   └── utils.py                 # Helper functions
-├── models/                       # Trained model artifacts
-│   ├── lgb_model.pkl            # Saved LightGBM model
-│   ├── scaler.pkl               # Feature scaling transformer
-│   └── feature_selector.pkl     # Feature selection model
-├── results/                      # Analysis outputs
-│   ├── performance_metrics.json  # Model evaluation results
-│   ├── feature_importance.png   # Feature analysis plots
-│   └── trading_signals.csv      # Generated trading signals
-└── config/                       # Configuration files
-    ├── model_config.yaml        # Model hyperparameters
-    └── data_config.yaml         # Data processing settings
+└── README.md                     # Project documentation
 ```
 
 ---
 
-## USAGE GUIDE
+## GETTING STARTED
 
-### 🚀 **Model Training**
+### **Installation**
 
-```python
-# Load and preprocess market data
-from src.data_preprocessing import DataPreprocessor
-from src.model_training import LightGBMTrainer
+```bash
+# Clone repository
+git clone https://github.com/abdeladime2003/Optiver-Trading-at-the-close.git
+cd Optiver-Trading-at-the-close
 
-# Initialize components
-preprocessor = DataPreprocessor()
-trainer = LightGBMTrainer()
+# Install dependencies
+pip install -r requirements.txt
 
-# Prepare training data
-X_train, y_train = preprocessor.prepare_features(raw_data)
-
-# Train the model
-model = trainer.train(X_train, y_train)
+# Key packages
+pip install pandas numpy scikit-learn lightgbm matplotlib seaborn
 ```
 
-### 📊 **Feature Engineering**
+### **Usage**
 
 ```python
-# Generate technical indicators
-from src.feature_engineering import TechnicalIndicators
+# Load and preprocess data
+import pandas as pd
+import lightgbm as lgbm
+from sklearn.model_selection import RandomizedSearchCV
 
-indicators = TechnicalIndicators()
+# Load dataset
+data = pd.read_csv("train.csv")
 
-# Create comprehensive feature set
-features = indicators.calculate_all(price_data)
-# Features include: RSI, MACD, Bollinger Bands, ATR, etc.
-```
+# Feature engineering pipeline
+df = preprocess_data(data)
+df = create_features(df)
+df = handle_outliers(df)
 
-### 💹 **Trading Signals**
+# Model training
+X = df.drop(["target"], axis=1)
+y = df[["target"]]
 
-```python
-# Generate trading predictions
-predictions = model.predict(current_features)
-
-# Convert to trading signals
-buy_signals = predictions > upper_threshold
-sell_signals = predictions < lower_threshold
-```
-
-### 📈 **Backtesting**
-
-```python
-# Evaluate trading strategy
-from src.backtesting import StrategyBacktester
-
-backtester = StrategyBacktester()
-results = backtester.run(signals, price_data)
-
-print(f"Total Return: {results['total_return']:.2%}")
-print(f"Sharpe Ratio: {results['sharpe_ratio']:.2f}")
-```
-
----
-
-## ALGORITHM DETAILS
-
-### 🧠 **LightGBM Architecture**
-
-**Model Specifications:**
-- **Gradient Boosting**: Efficient tree-based learning
-- **Feature Selection**: Automated importance ranking
-- **Regularization**: L1/L2 penalties for overfitting prevention
-- **Cross-Validation**: Time-series aware validation splits
-
-**Hyperparameter Optimization:**
-```python
-# Bayesian optimization for parameter tuning
-search_space = {
-    'num_leaves': (50, 200),
-    'learning_rate': (0.01, 0.3),
-    'feature_fraction': (0.6, 1.0),
-    'bagging_fraction': (0.6, 1.0)
+# Hyperparameter optimization
+param_grid = {
+    'num_leaves': [31, 100],
+    'learning_rate': [0.01, 0.15],
+    'n_estimators': [100, 200],
+    'min_child_samples': [20, 50]
 }
+
+lgb_model = lgbm.LGBMRegressor()
+random_search = RandomizedSearchCV(
+    estimator=lgb_model,
+    param_distributions=param_grid,
+    n_iter=50,
+    scoring='neg_mean_squared_error',
+    cv=3,
+    random_state=42
+)
+
+# Train model
+random_search.fit(X, y)
+best_model = random_search.best_estimator_
 ```
-
-### 📊 **Feature Importance Analysis**
-
-**Top Contributing Features:**
-1. **WAP (Weighted Average Price)**: 18.7% importance
-2. **Bid-Ask Spread**: 14.2% importance  
-3. **RSI (14-period)**: 11.8% importance
-4. **Volume Moving Average**: 9.4% importance
-5. **Price Momentum (5-day)**: 8.9% importance
 
 ---
 
-## RISK MANAGEMENT
+## TECHNICAL INSIGHTS
 
-### ⚠️ **Risk Controls**
+### **Data Characteristics**
 
-**Position Sizing:**
-- **Kelly Criterion**: Optimal position sizing based on edge and odds
-- **Maximum Position**: 5% of portfolio per trade
-- **Stop Loss**: Dynamic stops based on ATR volatility
-- **Take Profit**: Risk-reward ratio of 1:2 minimum
+**Dataset Statistics:**
+- **Size**: 5,237,980 rows × 17 original columns
+- **Target Variable**: Continuous price movement predictions
+- **Missing Values**: Significant in far_price (55%) and near_price (55%) columns
+- **Feature Distribution**: Heavy-tailed distributions requiring outlier treatment
 
-**Portfolio Management:**
-- **Diversification**: Maximum 10% exposure per sector
-- **Correlation Limits**: Avoid highly correlated positions
-- **Drawdown Controls**: Reduce position sizes during unfavorable periods
+**Key Observations:**
+- **Spread** is the most predictive feature (importance: 336)
+- **Temporal features** (seconds_in_bucket) are highly relevant
+- **Volume imbalances** provide significant predictive power
+- **Technical indicators** (RSI, moving averages) add moderate value
 
-### 📊 **Performance Monitoring**
+### **Model Limitations**
 
-**Real-Time Metrics:**
-- **P&L Tracking**: Live profit/loss monitoring
-- **Risk Metrics**: VaR, Expected Shortfall calculations  
-- **Model Drift**: Feature distribution monitoring
-- **Execution Quality**: Slippage and timing analysis
+**Performance Considerations:**
+- MAE of 6.3 indicates moderate prediction accuracy
+- RMSE of 9.29 suggests some large prediction errors
+- Model performs best on typical market conditions
+- Extreme market events may reduce prediction quality
 
----
-
-## DEPLOYMENT
-
-### 🚀 **Production Environment**
-
-**System Requirements:**
-```bash
-# Production server specifications
-CPU: 8+ cores (Intel Xeon or AMD EPYC)
-RAM: 32GB+ for real-time processing
-Storage: SSD with 100GB+ available
-Network: Low-latency connection (<10ms to exchanges)
-```
-
-**Deployment Pipeline:**
-```bash
-# Docker containerization
-docker build -t optiver-trading .
-docker run -d --name trading-bot optiver-trading
-
-# Kubernetes orchestration for scaling
-kubectl apply -f k8s-deployment.yaml
-```
-
-### 📡 **API Integration**
-
-**Real-Time Data Feeds:**
-- **Market Data**: Integration with major data providers
-- **News Sentiment**: Alternative data for enhanced predictions
-- **Economic Calendar**: Macro event impact modeling
+**Improvements Needed:**
+- Feature selection could be further refined
+- Additional ensemble methods might improve robustness
+- More sophisticated time-series validation approaches
+- Integration of external market factors
 
 ---
 
 ## CONTRIBUTING
 
-### 🤝 **Collaboration Guidelines**
+### **Development Guidelines**
 
-**Development Workflow:**
 ```bash
-# 1. Fork and clone
+# Fork and clone
 git clone https://github.com/yourusername/Optiver-Trading-at-the-close.git
 
-# 2. Create feature branch
-git checkout -b feature/new-indicator
+# Create feature branch
+git checkout -b feature/model-improvement
 
-# 3. Implement enhancement
-# - Add new technical indicators
-# - Improve model performance
-# - Enhance risk management
+# Implement changes
+# - Add new features
+# - Improve preprocessing
+# - Enhance model architecture
 
-# 4. Submit pull request
-git commit -m "feat: add stochastic oscillator indicator"
-git push origin feature/new-indicator
+# Submit pull request
+git commit -m "feat: add volatility-based features"
+git push origin feature/model-improvement
 ```
 
-**Code Quality Standards:**
-- **Testing**: Minimum 80% code coverage
-- **Documentation**: Comprehensive docstrings and comments
-- **Performance**: Benchmark all new features
-- **Risk**: Validate all trading logic with backtesting
-
 ---
 
-## RESEARCH & DEVELOPMENT
+## COMPETITION CONTEXT
 
-### 🔬 **Current Research**
+### **Optiver Trading Competition**
 
-**Machine Learning Enhancements:**
-- **Deep Learning**: LSTM/GRU for sequence modeling
-- **Ensemble Methods**: Combining multiple model predictions
-- **Reinforcement Learning**: Adaptive trading strategies
-- **Alternative Data**: Satellite imagery, social sentiment integration
+**Challenge Objective:**
+- Predict closing auction price movements in stock markets
+- Use market microstructure data for forecasting
+- Compete against quantitative researchers and data scientists
 
-**Market Microstructure:**
-- **Order Book Dynamics**: Level-2 data analysis
-- **High-Frequency Patterns**: Microsecond trading opportunities
-- **Cross-Asset Correlations**: Multi-market relationship modeling
+**Dataset Characteristics:**
+- Real market data from closing auctions
+- High-frequency trading environment simulation
+- Focus on market microstructure features
 
-### 🎯 **Future Roadmap**
-
-**Technical Improvements:**
-- **Model Interpretability**: SHAP values for feature explanations
-- **Real-Time Inference**: Sub-millisecond prediction latency
-- **Automated Retraining**: Continuous model adaptation
-- **Multi-Timeframe**: Integration of various trading horizons
-
----
-
-## ACADEMIC REFERENCES
-
-### 📚 **Financial Literature**
-
-**Key Research Papers:**
-- **"Gradient Boosting for Financial Time Series"** (Zhang et al., 2020)
-- **"Market Microstructure and Algorithmic Trading"** (Hasbrouck, 2007)
-- **"Machine Learning for Asset Management"** (Rasekhschaffe & Jones, 2019)
-- **"High-Frequency Trading and Market Quality"** (Brogaard et al., 2014)
-
-**Technical Analysis References:**
-- **"Technical Analysis of the Financial Markets"** (Murphy, 1999)
-- **"Quantitative Trading Strategies"** (Kestner, 2003)
-- **"Algorithmic Trading and DMA"** (Johnson, 2010)
-
----
-
-## COMPETITION RESULTS
-
-### 🏆 **Optiver Competition Performance**
-
-**Leaderboard Rankings:**
-- **Public Score**: 5.7823 (Top 15% of participants)
-- **Private Score**: 5.8467 (Consistent performance)
-- **Final Ranking**: 342nd out of 3,851 teams
-
-**Key Achievements:**
-- **Stable Predictions**: Low variance across validation folds
-- **Feature Engineering**: Novel technical indicators development
-- **Risk Management**: Superior drawdown control
-- **Execution**: Efficient real-time prediction pipeline
+**Evaluation Methodology:**
+- Mean Absolute Error (MAE) as primary metric
+- Time-series validation to prevent data leakage
+- Out-of-sample testing on unseen data
 
 ---
 
 ## LICENSE & CONTACT
 
-**License**: MIT License - See [LICENSE](LICENSE) file for full details.
+**License**: MIT License - Educational and research purposes
 
-**Lead Quantitative Developer**: Abdeladime Benali  
+**Developer**: Abdeladime Benali  
 **Email**: abdeladimebenali2003@gmail.com  
 **Institution**: INPT - National Institute of Posts & Telecommunications  
 **LinkedIn**: [linkedin.com/in/abdeladime-benali](https://linkedin.com/in/abdeladime-benali)  
 **GitHub**: [github.com/abdeladime2003](https://github.com/abdeladime2003)
 
-**Trading Disclaimer**: *This software is for educational and research purposes only. Past performance does not guarantee future results. Trading involves significant risk of loss. Please consult with financial professionals before making investment decisions.*
+**Disclaimer**: This project is for educational purposes. The model results shown are from academic research and should not be used for actual trading decisions without proper validation and risk management.
 
 ---
 
@@ -479,9 +385,8 @@ git push origin feature/new-indicator
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdeladime-benali)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdeladime2003)
-[![Trading](https://img.shields.io/badge/Quantitative-Finance-FF6B35?style=for-the-badge&logo=tradingview&logoColor=white)](https://github.com/abdeladime2003/Optiver-Trading-at-the-close)
 
-**Professional Quantitative Trading System | INPT 2025**
+**Academic Research Project | INPT 2025**
 
 </div>
 
